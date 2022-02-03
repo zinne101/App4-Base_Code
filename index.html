@@ -140,3 +140,42 @@ blah, blah, blah, blah
 	<a href="#four"  onclick="fluAdd();"  class="w3-button w3-red"> No </a>  <!-- This red button answers no for the question and adds to the allergy count -->
 	</div>
 </div>	
+	
+<div class="page" id="four">
+<!-- Page four --> 
+	<div class="w3-container w3-flat-carrot">
+		<h1>Question 4</h1>
+		<!-- Header for question four --> 
+	</div>
+	<!-- Divider to separate text --> 
+
+	<div id="content" class="w3-container">
+		<p>Were your symptoms abrupt or rapid?</p> <!-- Last question -->
+	<a href="#five"  onclick="fluAdd();"  class="w3-btn w3-green"> Yes </a>  <!-- This green button answers yes for the question and adds to the allergy count -->
+	<a href="#five"  onclick="covidAdd();"  class="w3-btn w3-red"> No </a>  <!-- This red button answers no for the question and adds to the cold count -->
+	</div>
+</div>	
+
+<div class="page" id="five">
+<!-- This is the fifth page that holds the results --> 
+	<div class="w3-container w3-flat-carrot">
+		<h1>Results</h1>
+		<!-- This is the header for the results page --> 
+	</div>
+	<!-- Divider to separate text --> 
+	
+	<div id="content" class="w3-container">
+<p id="results"></p> <!-- This tells the button where to place the text for the function --> 
+		<a onclick="resultsPercentage();" class="w3-button w3-teal"> Click to Get Your Results! </a> 
+		<!-- This is the button that has the function to display the result functions --> 
+
+	</div>
+</div>	
+	
+	
+<footer class="w3-bottom w3-container w3-flat-carrot">
+	<p>DIY!</p>
+</footer>
+
+</body>
+</html>
