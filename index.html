@@ -105,7 +105,7 @@ blah, blah, blah, blah
 </html>
 	
 <div class="page" id="one">
-<!-- This is the first page with the questions -->
+<!-- This is the first page with the questions. The "id" element is used to identify page numbers. --> 
 	<div id="header" class="w3-container w3-teal">
 		<h1>Question 1</h1>
                 <!-- This is the header for page one --> 
@@ -114,6 +114,7 @@ blah, blah, blah, blah
 
     	<div id="content" class="w3-container">
         <p>Are you experiencing a loss of smell and/or taste?</p>  <!-- First question --> 
+	<!-- The "href=" tells the link to go to the next page when clicked. -->
     	<a href="#two"  onclick="covidAdd();" class="w3-button w3-green"> Yes </a>  <!-- This green button answers yes for the question and adds to the covid count --> 
 	<a href="#two"  onclick="fluAdd();" class="w3-button w3-red"> No </a>  <!-- This red button answers no for the question and adds to the flu count --> 
 	</div>
