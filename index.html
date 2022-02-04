@@ -6,8 +6,7 @@ THIS CODE SHOULD NOT BE USED TO DIAGNOSE ANY KIND OF MEDICAL CONDITION.
  
  
 Authors in chronological order of contribution:
-Author 1
-Author 2
+Zinne Njoku
  
 Further Information:
 http://diystream.cns.utexas.edu/
@@ -32,7 +31,7 @@ blah, blah, blah, blah
    </head> 
 	
 <script>
-        var flu_count = 0; // This variable store the flu count. 
+        var flu_count = 0; // This variable stores the flu count. 
         var covid_count = 0; // This variable stores the covid count. 
 
 
@@ -46,7 +45,7 @@ blah, blah, blah, blah
         };
 
 	function resultsPercentage(){
-		var resultText = document.getElementById("results");
+		var resultText = document.getElementById("results"); // This captures the content that will displayed on the results page. 
 		var FluPercent = (flu_count/4)*100; // This variable calculates the flu percent by taking the flu count and dividing it by the total number of questions and multiplying by 100.  
 		var CovidPercent = (covid_count/4)*100; // This variable calculates the covid percent by taking the total covid count and diving it by the total number of questions and multiplying by 100. 
 		resultText.innerHTML = "Probability it is the flu = " + FluPercent + "%" + "<br> Probability it is Covid-19 = " + CovidPercent + "%"; // This is the text displayed when the function is in use. 
@@ -84,13 +83,15 @@ blah, blah, blah, blah
 
 <body>
 <div id="header" class="w3-container w3-teal">
-	<h1>Influenza or Covid-19?</h1> <!-- This is the title of the main page --> 
+	<h1>Influenza or Covid-19?</h1> <!-- This is the header of that main page that has the title --> 
 </div>
 	
 <div id="content" class="w3-container w3-center">
 	<p>
 		<img src="https://www.statnews.com/wp-content/uploads/2020/02/Coronavirus-CDC-645x645.jpg" alt="Covid-19" style="float:left;width:200px;height:200px;">
+		<!-- This is an image of the Covid-19 virus. The "src=" gives direction on where the image is located. The "alt" is used for alternate text in case the image is not displayed on the device. The image is floating on the left meaning it is positioned on the left side of the page and wrapped by the text.-->
 		<img src="https://www.virology.ws/wp-content/uploads/2010/10/influenza_virus.jpg" alt="Influenza Virus" style="float:right;width:200px;height:200px;">
+		<!-- <!-- This is an image of the influenza virus. The "src=" gives direction on where the image is located. The "alt" is used for alternate text in case the image is not displayed on the device. The image is floating on the right meaning it is positioned on the right side of the page and wrapped by the text.-->
 		Are you feeling like you might have the flu, but are afraid it might be something more serious like Covid-19? Answer a few short questions to find out!</p>
 	
 	<a href="#one" class="w3-btn w3-teal w3-round"> Click to Get Started! </a>
