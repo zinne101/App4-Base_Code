@@ -17,7 +17,7 @@ Timothy Riedel
 triedel@utexas.edu
  
 Brief Description of Goal of Code:
-blah, blah, blah,
+This code 
  
 Known Issues:
 blah, blah, blah, blah
@@ -37,18 +37,18 @@ blah, blah, blah, blah
 
 
         function fluAdd(){
-            flu_count = flu_count + 1; // This function adds a count to the allergy_count. 
+            flu_count = flu_count + 1; // This function adds a count to the flu_count. 
 
         };
 
         function covidAdd(){
-            covid_count = covid_count + 1; // This function adds a count to the cold_count. 
+            covid_count = covid_count + 1; // This function adds a count to the covid_count. 
         };
 
 	function resultsPercentage(){
 		var resultText = document.getElementById("results");
-		var FluPercent = (flu_count/4)*100; // This variable calculates the allergy percent by taking the allergy count and dividing it by the total number of questions and multiplying by 100.  
-		var CovidPercent = (covid_count/4)*100; // This variable calculates the cold percent by taking the total cold count and diving it by the total number of questions and multiplying by 100. 
+		var FluPercent = (flu_count/4)*100; // This variable calculates the flu percent by taking the flu count and dividing it by the total number of questions and multiplying by 100.  
+		var CovidPercent = (covid_count/4)*100; // This variable calculates the covid percent by taking the total covid count and diving it by the total number of questions and multiplying by 100. 
 		resultText.innerHTML = "Probability it is the flu = " + FluPercent + "%" + "<br> Probability it is Covid-19 = " + CovidPercent + "%"; // This is the text displayed when the function is in use. 
 	}
 	
@@ -78,7 +78,7 @@ blah, blah, blah, blah
 </style>
 
 <body>
-<div id="header" class="w3-container w3-flat-carrot">
+<div id="header" class="w3-container w3-flat-teal">
 	<h1>Influenza or Covid-19?</h1> <!-- This is the title of the main page --> 
 </div>
 	
