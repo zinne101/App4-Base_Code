@@ -16,10 +16,10 @@ Timothy Riedel
 triedel@utexas.edu
  
 Brief Description of Goal of Code:
-This code 
+This code was created to assess the probability of a patient having either Covid-19 or the flu based on their symptoms. 
  
 Known Issues:
-blah, blah, blah, blah
+An issue encountered was adding appropriately sized images in the correct location. 
 -->
 
    <head> 
@@ -31,8 +31,8 @@ blah, blah, blah, blah
    </head> 
 	
 <script>
-        var flu_count = 0; // This variable stores the flu count. 
-        var covid_count = 0; // This variable stores the covid count. 
+        var flu_count = 0; // This variable stores the flu count and starts at zero. 
+        var covid_count = 0; // This variable stores the covid count and starts at zero. 
 
 
         function fluAdd(){
@@ -115,7 +115,7 @@ blah, blah, blah, blah
     	<div id="content" class="w3-container">
         <p>Are you experiencing a loss of smell and/or taste?</p>  <!-- First question --> 
 	<!-- The "href=" tells the link to go to the next page when clicked. -->
-    	<a href="#two"  onclick="covidAdd();" class="w3-button w3-green"> Yes </a>  <!-- This green button answers yes for the question and adds to the covid count --> 
+    	<a href="#two"  onclick="covidAdd();" class="w3-button w3-green"> Yes </a>  <!-- This green button answers yes for the question and adds to the covid count. This is done by the onclick associated with the covidAdd function --> 
 	<a href="#two"  onclick="fluAdd();" class="w3-button w3-red"> No </a>  <!-- This red button answers no for the question and adds to the flu count --> 
 	</div>
 	
@@ -175,7 +175,7 @@ blah, blah, blah, blah
 	<!-- Divider to separate text --> 
 	
 	<div id="content" class="w3-container">
-<p id="results"></p> <!-- This tells the button where to place the text for the function --> 
+		<p id="results"></p> <!-- This tells the button where to place the text for the function --> 
 		<a onclick="resultsPercentage();" class="w3-button w3-teal"> Click to Get Your Results! </a> 
 		<!-- This is the button that has the function to display the result functions --> 
 
@@ -183,7 +183,7 @@ blah, blah, blah, blah
 </div>	
 	
 	
-<footer class="w3-bottom w3-container w3-teal">
+<footer class="w3-bottom w3-container w3-teal"> <!-- This is the footer displayed at the bottom of each page --> 
 	<p>DIY!</p>
 </footer>
 
